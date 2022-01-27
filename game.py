@@ -1,5 +1,6 @@
-peli_fav = input("Pelicula favorita: ")
-adjetivo = input("Adjetivo: ")
-verbo = input("Verbo: ")
+from sample_madlibs import fav_mov
+import random
 
-madlibs = f"Mi pelicula favorita es {peli_fav} pues es muy {adjetivo} que no puedo para de {verbo}"
+if __name__ == "__main__":
+    sentence = random.choice([fav_mov])
+    sentence.play_madlib()
